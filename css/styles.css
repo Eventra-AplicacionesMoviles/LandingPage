@@ -18,7 +18,7 @@ nav {
     top: 0;
     width: 100%;
     height: 80px;
-    background-color: #1a1a1a; /* Fondo gris oscuro */
+    background-color: #000000fa; /* Fondo gris oscuro */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,6 +30,7 @@ nav .logo {
     color: #ffffff; /* Blanco */
     font-size: 1.8rem;
     font-weight: bold;
+    margin-left: -40px;
 }
 nav a {
     text-decoration: none;
@@ -39,7 +40,7 @@ nav a {
     transition: color 0.3s;
 }
 nav a:hover {
-    color: #7a3aed; /* Hover en morado moderno */
+    color: #00e5e5; /* Hover en morado moderno */
 }
 
 /* CTA Section */
@@ -227,7 +228,10 @@ nav a:hover {
     font-size: 1.2rem;
     color: #333;
 }
-
+.review-card .stars {
+    color: #f39c12;
+    font-size: 1.2rem;
+}
 /* Contact Section */
 .contact-section {
     padding: 60px;
