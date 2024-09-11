@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #1a1a1a; /* Fondo gris oscuro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1000;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+nav .logo {
+    color: #ffffff; /* Blanco */
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+nav a {
+    text-decoration: none;
+    color: #dcdcdc; /* Gris claro */
+    margin-left: 30px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #7a3aed; /* Hover en morado moderno */
+}
+
+/* CTA Section */
+.cta-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 60px;
+    background: linear-gradient(135deg, #182848, #dcdcdc); /* Degradado azul oscuro */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 80px; /* Reduce espacio en blanco */
+}
+.cta-text {
+    max-width: 60%;
+    color: #fff;
+}
+.cta-text h2 {
+    font-size: 3rem;
+    color: #ffffff; /* Blanco */
+    margin-bottom: 20px;
+}
+.cta-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+.download-buttons {
+    margin-top: 40px; /* Aumenta espacio superior de los botones */
+}
+.download-buttons a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #182848  ; /* Morado moderno */
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin: 0 15px;
+    transition: background 0.3s;
+}
+.download-buttons a:hover {
+    background-color: #224385; /* Hover morado oscuro */
+}
+
+/* Features Section */
+.features-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.features-section h2 {
+    font-size: 2.5rem;
+    color: #182848;
+    margin-bottom: 40px;
+}
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.feature-card {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+    color: #333;
+}
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.8);
+}
+.feature-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #182848; /* Azul más claro */
+}
+.feature-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666666;
+}
+
+/* Plans Section */
+.plans-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #182848 , #4b6cb7); /* Degradado morado-azul */
+    text-align: center;
+    color: white;
+}
+.plans-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+.plans-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.plan-card {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.8);
+}
+.plan-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #182848 ;
+}
+.plan-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666666;
+    margin-bottom: 15px;
+}
+.plan-card .price {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #182848;
+}
+.plan-card .cta-button {
+    background-color: #182848 ;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+.plan-card .cta-button:hover {
+    background-color: #1d3a74;
+}
+
+/* Reviews Section */
+.reviews-section {
+    padding: 60px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.reviews-section h2 {
+    font-size: 2.5rem;
+    color: #182848 ;
+    margin-bottom: 20px;
+}
+.reviews-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.review-card {
+    background-color: #f0f0f0;
+    padding: 30px;
+    border-radius: 15px;
+    width: 30%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+.review-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.review-card p {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 10px;
+}
+.review-card h4 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px;
+    background-color: #f4f4f4;
+    text-align: center;
+    color: #333;
+}
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #182848;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: #182848;
+}
+.contact-form button {
+    background-color: #182848;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+.contact-form button:hover {
+    background-color: #1e3e7e;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer p {
+    font-size: 1rem;
+}
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #9b1818;
+}
